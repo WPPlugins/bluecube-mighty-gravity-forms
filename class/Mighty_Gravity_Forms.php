@@ -245,7 +245,7 @@ class Mighty_Gravity_Forms
 		if (isset($_REQUEST['action']) && $_REQUEST['action'] == 'gf_download_export') {
 			$this->form_access_already_checked = true;
 
-			return $this->currentUserHasAccessToForm($form['id']) ? $form : die('Access denied!');
+			return $this->currentUserHasAccessToForm($form['id']) ? $form : die('Access denied! Please contact the website administrator to add your user to the roles allowed to export in this specific form\'s settings.');
 		}
 
 		return $form;
